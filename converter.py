@@ -5,6 +5,8 @@ import aspose.pdf as ap
 class ConversionError(Exception):
     pass
 
+pdf.text.FontRepository.Sources.Add(pdf.text.FolderFontSource("/usr/share/fonts/truetype/"))
+
 def convert_pdf_bytes_to_xlsx_bytes(pdf_bytes, minimize_worksheets=True):
     if not pdf_bytes:
         raise ValueError("pdf_bytes vazio.")
@@ -55,4 +57,5 @@ def sniff_output_filename(input_filename):
     base = os.path.basename(input_filename)
     if base.lower().endswith(".pdf"):
         base = base[:-4]
+
     return base + ".xlsx"
