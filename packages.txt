@@ -1,7 +1,7 @@
 libgdiplus
 libx11-dev
+libxext6
+libxrender1
 libfontconfig1
 libfreetype6
 fonts-dejavu
-libxext6
-libxrender1
