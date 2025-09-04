@@ -1,0 +1,5 @@
+libgdiplus
+libx11-dev
+libfontconfig1
+libfreetype6
+fonts-dejavu
