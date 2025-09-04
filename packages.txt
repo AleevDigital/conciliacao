@@ -7,3 +7,7 @@ libfreetype6
 fonts-dejavu
 fonts-liberation
 fontconfig
+fonts-dejavu-core
+fonts-dejavu-extra
+fonts-liberation
+libfontconfig1
