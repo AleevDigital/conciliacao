@@ -5,4 +5,5 @@ libxrender1
 libfontconfig1
 libfreetype6
 fonts-dejavu
+fonts-liberation
 fontconfig
