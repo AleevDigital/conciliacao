@@ -1,4 +1,4 @@
 pandas
 numpy
 streamlit
-aspose-pdf-python
+aspose-pdf==24.6.0
