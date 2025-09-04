@@ -16,6 +16,9 @@ if extrato is not None and sistema is not None:
     iniciar = st.button("Iniciar Processo")
 
     if iniciar:
+        # reposiciona os ponteiros para o início (seguro em reruns)
+        extrato.seek(0)
+        sistema.seek(0)
         pdf_bytes = extrato.read()
         pdf2_bytes = sistema.read()
         try:
@@ -34,6 +37,7 @@ if extrato is not None and sistema is not None:
             st.error("Erro na conversão: %s" % e)
         except Exception as e:
             st.error("Erro inesperado: %s" % e)
+
 
 
 
